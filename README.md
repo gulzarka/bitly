@@ -1,0 +1,1 @@
+## This code allows to see the total number of clicks on bitly links, in case if the link is not a bitly link, the code shortens the links into bitly links##
