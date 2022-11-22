@@ -8,9 +8,17 @@ The script shortens a link into a bitly link. If you enter already shoretened bi
 ## Installation:
 
    - Python3 is required   
-   - Use pip (or pip3 if there is a conflict with Python2) for installing dependencies:
+   - Use pip (or pip3 if there is a conflict with Python2) for installing dependencies:  
      `pip install -r requirements.txt`
-  - use virtualenv/venv for isolating the project
+  - use virtualenv/venv for isolating the project:  
+  
+          virtualenv venv  
+          source venv/bin/activate/  
+    
+    
+    - import `load_dotenv` for filing bitly token 
+    
+  
  
   
 
@@ -39,7 +47,10 @@ use command `-l`  or `--link`  putHereYourlink
   - Python3 должен быть установлен. 
   - Испрользуйте pip(или pip3 в случае конфликта с Python2) для установки зависимостей.
     pip install -r requirements.txt
-  - Рекомендуется использовать virtualenv/venv для изоляции проекта
+  - Рекомендуется использовать virtualenv/venv для изоляции проекта:\
+        ` virtualenv venv `   
+        `source venv/bin/activate/ `
+  -Импортируйте `load_dotenv` для записи и хранения Битли токена
   
 
 ## Применение:
