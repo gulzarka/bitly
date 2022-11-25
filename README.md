@@ -9,8 +9,8 @@ If you enter already shoretened bitly link, it counts total clicks on the link.
 ## Installation:
    - You need Python3 installed; 
    - Use  `virtualenv` for isolating the project: \
-        `python3 -m venv env`
-        `source venv/bin/activate
+        `python3 -m venv env`  
+        `source venv/bin/activate`
    - Install dependencies using pip (or pip3 if there is a conflict with Python2):  
      `pip install -r requirements.txt`   
     file requirements.txt will install following modules:   
@@ -18,7 +18,7 @@ If you enter already shoretened bitly link, it counts total clicks on the link.
       - requests  
       - urllib3  
  - Get your bitly token on  https://app.bitly.com/settings/api/
- - Save your token in .env file with variable BITLY_TOKEN = 
+ - Save your token in .env file with variable BITLY_TOKEN = yourtoken
  
     
 
@@ -66,10 +66,10 @@ Example:
      - requests
      - urllib3
   - Рекомендуется использовать `virtualenv` для изоляции проекта:\
-       `python3 -m venv env`
+       `python3 -m venv env` \
         `source venv/bin/activate`
  - Получите токен по адресу  https://app.bitly.com/settings/api/
- - Сохраните токен в файле .env в переменной BITLY_TOKEN =        
+ - Сохраните токен в файле .env в переменной BITLY_TOKEN = ваштокен       
         
  
   
