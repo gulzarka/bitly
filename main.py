@@ -11,23 +11,18 @@ def main():
     bitly_token = os.getenv("BITLY_TOKEN")
     headers = {"Authorization": f"Bearer {bitly_token}"}
     link = parse_arguments()
-    if is_bitlink(headers, link):
-        try:
-            total_clicks = count_clicks(headers, link)
-            print(f"По вашей ссылке прошли {total_clicks} раз(а)")
-        except requests.exceptions.HTTPError:
-            print("Указана длинная ссылка или неверный адрес")
-    else:
-        try:
-            bitlink = shorten_link(headers, link)
-            print(f"Битлинк: {bitlink}")
-        except requests.exceptions.HTTPError:
-            print("Указан неверный адрес")
+    try:
+        if is_bitlink(headers, link):
+            print(f"По вашей ссылке прошли {count_clicks(headers, link)} раз(а)")
+        else:
+            print(f"Битлинк: {shorten_link(headers, link)}")
+    except requests.exceptions.HTTPError:
+        print("Указан неверный адрес") 
 
 
 def parse_arguments():
     parser = argparse.ArgumentParser()
-    parser_argument = parser.add_argument ('-l', '--link', required=True)
+    parser.add_argument ('-l', '--link', required=True)
     argument = parser.parse_args()
     return argument.link
 
