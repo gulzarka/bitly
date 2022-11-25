@@ -5,11 +5,12 @@ from dotenv import load_dotenv
 import sys
 import argparse
 
+
 def main():
     load_dotenv()
     bitly_token = os.getenv("BITLY_TOKEN")
     headers = {"Authorization": f"Bearer {bitly_token}"}
-    link = create_linkspace()
+    link = parse_arguments()
     if is_bitlink(headers, link):
         try:
             total_clicks = count_clicks(headers, link)
@@ -24,11 +25,11 @@ def main():
             print("Указан неверный адрес")
 
 
-def create_linkspace():
+def parse_arguments():
     parser = argparse.ArgumentParser()
     parser_argument = parser.add_argument ('-l', '--link', required=True)
-    linkspace = parser.parse_args()
-    return linkspace.link
+    argument = parser.parse_args()
+    return argument.link
 
 
 def is_bitlink(headers, link):
