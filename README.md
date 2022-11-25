@@ -2,20 +2,17 @@
 # Bitly shortener
 
 
-The script shortens a link into a bitly link. If you enter already shoretened bitly link, it counts the number of total clicks on given link.
+The script shortens a link into a bitly link using www.bitly.com \
+If you enter already shoretened bitly link, it counts total clicks on the link.
 
 
 ## Installation:
-
-   - Python3 is required   
-   - Use pip (or pip3 if there is a conflict with Python2) for installing dependencies:  
+   - You need Python3 installed; 
+   - Install dependencies using pip (or pip3 if there is a conflict with Python2):  
      `pip install -r requirements.txt`
-  - use virtualenv/venv for isolating the project:  
-  
-          virtualenv venv  
-          source venv/bin/activate/  
+ 
     
-    
+
     - import `load_dotenv` for filing bitly token 
     
   
