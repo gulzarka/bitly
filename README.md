@@ -10,6 +10,8 @@ If you enter already shoretened bitly link, it counts total clicks on the link.
    - You need Python3 installed; 
    - Install dependencies using pip (or pip3 if there is a conflict with Python2):  
      `pip install -r requirements.txt`
+    file requirements.txt will install following modules:
+    
  
     
 
