@@ -10,7 +10,7 @@ def main():
     load_dotenv()
     bitly_token = os.getenv("BITLY_TOKEN")
     headers = {"Authorization": f"Bearer {bitly_token}"}
-    link = parse_arguments()
+    link = parse_argument()
     try:
         if is_bitlink(headers, link):
             print(f"По вашей ссылке прошли {count_clicks(headers, link)} раз(а)")
@@ -20,7 +20,7 @@ def main():
         print("Указан неверный адрес") 
 
 
-def parse_arguments():
+def parse_argument():
     parser = argparse.ArgumentParser()
     parser.add_argument ('-l', '--link', required=True)
     argument = parser.parse_args()
