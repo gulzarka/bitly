@@ -18,7 +18,7 @@ If you enter already shoretened bitly link, it counts total clicks on the link.
       - requests  
       - urllib3  
  - Get your bitly token on  https://app.bitly.com/settings/api/
- - Save your token in .env file with variable BITLY_TOKEN = yourtoken
+ - Save your token in .env file with variable BITLY_TOKEN=yourtoken
  
     
 
