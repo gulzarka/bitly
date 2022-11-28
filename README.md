@@ -28,8 +28,8 @@ If you enter already shoretened bitly link, it counts total clicks on the link.
   
 
 ## Usage:
-use command `-l`  or `--link` and put your link
-Example:
+use command `-l`  or `--link` and put your link\
+See example:
 ```
 - bitly$ python3 main.py -l https://www.auca.kg/
 Битлинк: bit.ly/3EBrDZK
